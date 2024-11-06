@@ -1,0 +1,33 @@
+.serviceCards {
+  border-radius: 40px;
+  background-color: #fff;
+  padding: 40px;
+  width: 646px;
+  box-shadow: 0px 4px 12px 0px #0000000d;
+
+  .title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    h3 {
+      font-size: 24px;
+      color: #2c2b35;
+    }
+  }
+  .text {
+    font-size: 16px;
+    color: #6f7973;
+    margin: 14px 0 32px 0;
+  }
+}
+
+.minCard {
+  width: 424px;
+}
+
+@media (max-width: 768px) {
+  .serviceCards {
+    width: 335px;
+  }
+}

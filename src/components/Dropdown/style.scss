@@ -1,0 +1,138 @@
+.dropdown {
+  margin-top: 120px;
+  .dropTitle {
+    font-size: 32px;
+    color: #3d4641;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .row {
+    position: relative;
+    cursor: pointer;
+
+    .dropdown-button {
+      box-shadow: 0px 4px 12px 0px #0000000d;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      width: 100%;
+      font-size: 20px;
+      font-weight: 600;
+      background-color: #ffffff;
+      color: #3d4641;
+      border: none;
+      transition: all 0.6s linear;
+      border-radius: 5px;
+      cursor: pointer;
+      outline: none;
+
+      border-radius: 40px;
+      svg {
+        transition: all 0.3s linear;
+        transform: rotate(90deg);
+      }
+    }
+
+    .dropdown-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+      background-color: #fff;
+      padding: 0 20px;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+
+      p {
+        margin: 10px 0;
+        color: #6f7973;
+        font-size: 14px;
+        line-height: 19.51px;
+      }
+      li {
+        color: #6f7973;
+        font-size: 14px;
+        line-height: 19.51px;
+      }
+    }
+
+    &.open .dropdown-content {
+      max-height: 300px; /* Tarkib hajmiga qarab o'zgartirishingiz mumkin */
+      opacity: 1;
+      padding: 0px 40px 20px 40px;
+    }
+  }
+
+  .open {
+    .dropdown-button {
+      border-radius: 0;
+      border-top-right-radius: 40px;
+      border-top-left-radius: 40px;
+      transition: all 0.1s linear;
+      svg {
+        transition: all 0.3s linear;
+        transform: rotate(270deg);
+      }
+    }
+  }
+  .notDrop {
+    padding: 20px 113px;
+    color: #ffffff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(178.11deg, #43a548 -147.02%, #52e259 286.68%);
+    button {
+      cursor: pointer;
+      padding: 12px 30px;
+      border-radius: 100px;
+      border: none;
+      background-color: #fff;
+      color: #43a548;
+      transition: all 0.3s linear;
+      &:hover {
+        background-color: #000000;
+        color: #fff;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .dropdown {
+    margin-top: 60px;
+    .container {
+      gap: 10px;
+    }
+    .dropTitle {
+      font-size: 24px;
+      margin-bottom: 32px;
+    }
+    .row {
+      .dropdown-button {
+        font-size: 14px;
+        text-align: start;
+      }
+    }
+    .notDrop {
+      flex-direction: column;
+      padding: 12px 20px;
+      p {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      button {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+}

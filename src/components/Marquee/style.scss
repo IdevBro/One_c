@@ -1,0 +1,36 @@
+.marqueTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.marquee {
+  overflow: hidden;
+  .logos {
+    display: flex;
+    animation: marquee 20s linear infinite;
+    column-gap: 80px;
+  }
+
+  .support {
+    display: flex;
+    column-gap: 80px;
+
+    .imgMarquee {
+      width: 100px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

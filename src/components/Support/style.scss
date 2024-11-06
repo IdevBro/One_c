@@ -1,0 +1,89 @@
+.support {
+  .row {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 40px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+      width: 646px;
+      padding-top: 22px;
+      h3 {
+        font-size: 26px;
+        color: #2c2b35;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 14px;
+        color: #2c2b35;
+        line-height: 22.3px;
+      }
+      a {
+        text-decoration: none;
+        color: #327f36;
+      }
+    }
+    .right {
+      border-radius: 40px;
+      padding: 40px;
+      width: 477px;
+      background: linear-gradient(252.7deg, #ebf5eb 17.34%, #effbf0 90.57%);
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #2c2b35;
+        line-height: 25px;
+
+        a {
+          text-decoration: none;
+          color: #327f36;
+        }
+      }
+      .phoneMail {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        .nameText {
+          font-size: 14px;
+          color: #6f7973;
+          font-weight: 400;
+        }
+        .numberText {
+          font-size: 20px;
+          font-weight: 600;
+          color: #327f36;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .support {
+    .row {
+      padding: 20px;
+      flex-direction: column;
+      padding-bottom: 20px;
+      margin-top: 60px;
+      .left {
+        width: 335px;
+
+        h3 {
+          font-size: 20px;
+          width: 295px;
+        }
+        p {
+          width: 295px;
+          font-size: 16px;
+        }
+      }
+      .right {
+        width: 295px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

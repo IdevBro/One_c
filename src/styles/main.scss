@@ -1,0 +1,94 @@
+@import "./fonts.scss";
+@import "../components/Navbar/style.scss";
+@import "../components/Header/style.scss";
+@import "../components/ServiceCards/style.scss";
+@import "../components/SectionCards/style.scss";
+@import "../components/Famous/style.scss";
+@import "../components/Support/style.scss";
+@import "../components/Restaurant/style.scss";
+@import "../components/Register/style.scss";
+@import "../components/Dropdown/style.scss";
+@import "../components/Stati/style.scss";
+@import "../components/Marquee/style.scss";
+@import "../components/Footer/style.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+  text-decoration: none;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1352px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.main {
+  background-color: #f7f8f8;
+}
+.headerBtn {
+  border: none;
+  color: #f7f8f8;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 100px;
+  background: #43a548;
+  background: linear-gradient(100.98deg, #43a548 0%, #43a548 100%);
+  transition: all 0.5s linear;
+  &:hover {
+    background: linear-gradient(100.98deg, #43a548 -4.14%, #52e259 108.69%);
+  }
+}
+.btnCard {
+  border: 1px solid #43a548;
+  color: #43a548;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 100px;
+  background: #43a548;
+  background: linear-gradient(100.98deg, #fff 0%, #fff 100%);
+  transition: all 0.4s linear;
+  &:hover {
+    color: #fff;
+
+    background: linear-gradient(100.98deg, #43a548 -4.14%, #52e259 108.69%);
+    transition: all 0.3s linear;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 325px) and (max-width: 768px) {
+  .container {
+    max-width: 375px;
+    padding: 0 20px;
+  }
+  .headerBtn {
+    border: none;
+    color: #f7f8f8;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 30px;
+    border-radius: 100px;
+    background: #43a548;
+    background: linear-gradient(100.98deg, #43a548 0%, #43a548 100%);
+    transition: all 0.5s linear;
+    &:hover {
+      background: linear-gradient(100.98deg, #43a548 -4.14%, #52e259 108.69%);
+    }
+  }
+}
